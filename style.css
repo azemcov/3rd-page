@@ -1,0 +1,157 @@
+:root {
+    --white:      #ffffff;
+    --light:      #ffdcd5;
+    --dark:       #2c3e50;
+    --primary:    #c08d42;
+    --secondary:  #025131;
+    --info:       #224250;
+}
+
+body {
+    background-color: var(--light);
+    font-size: 16px;
+}
+
+
+.main_logo_background {
+    background-color: var(--dark);
+    position: absolute;
+    height: calc(13em + 11px);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+header {
+    background-color: var(--dark);
+    display: table;
+    height: 10em;
+    width: 100%;
+}
+
+.nav_background {
+    background-color: var(--dark);
+    position: fixed;
+    height: calc(3em + 3px);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+nav {
+    background-color: var(--dark);
+    height: calc(3em + 3px);
+    position: sticky;
+    top: 0;
+    display: table;
+    vertical-align: middle;
+    width: 100%;
+    letter-spacing: 7px;
+}
+
+nav p {
+    color: var(--white);
+    text-align: center;
+}
+
+.main_logo {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#mylogo {
+    width: 100px;
+}
+
+.txt_logo {
+    color: var(--white);
+    font-family: Helvetica, sans-serif;
+    font-size: 5em;
+    font-weight: 100;
+    margin-left: 20px;
+}
+
+.txt_logo2 {
+    color: var(--white);
+    font-family: Helvetica, sans-serif;
+    font-size: 5em;
+    font-weight: 900;
+}
+
+/* комент css */
+
+br {
+    height: 1em;
+}
+
+main {
+
+}
+
+section {
+    max-width: 50%;
+    margin: auto;
+}
+
+article {
+    background-color: var(--white);
+    margin-bottom: 1em;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: justify;
+    /*  text-transform: uppercase;  */
+}
+
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--dark);
+}
+
+footer p {
+    color: var(--white);
+    text-align: center;
+}
+
+
+main p {
+    text-indent: 25px;
+    margin: 0;
+}
+
+p {
+    color: var(--dark);
+}
+
+
+hr {
+    border-color: var(--white);
+}
+
+h1 {
+    color: var(--dark);
+    font-size: xx-large;
+    margin: 0;
+}
+
+h2 {
+    color: var(--dark);
+    font-size: x-large;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+@media (max-width:1000px) {
+    header .txt_logo,header .txt_logo2 {
+        font-size: 4em;
+    }
+    section {
+        max-width: 100%;
+    }
+}
